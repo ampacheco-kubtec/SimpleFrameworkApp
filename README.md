@@ -17,3 +17,6 @@ az webapp browse -n devops-webapp
 ```
 
 ## Get Publishing Profile as XML
+
+
+## Store Publishing Profile as a Secret in Github Repository Settings
