@@ -4,3 +4,14 @@
 Sample repo for showing how to use GitHub Actions for a .NET Framework app.
 
 Blog post: https://timheuer.com/blog/building-net-framework-apps-using-github-actions/
+
+## Steps to Build the final solution
+```sh
+az login
+az group create --name devops-rg --location eastus
+az configure --defaults group=devops-rg location=eastus
+az appservice plan create --name devops-plan --sku F1
+az webapp create --name devops-webapp --plan devops-plan
+az webapp list
+az webapp browse -n devops-webapp
+```
