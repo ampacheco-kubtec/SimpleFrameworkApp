@@ -20,3 +20,9 @@ az webapp browse -n devops-webapp
 
 
 ## Store Publishing Profile as a Secret in Github Repository Settings
+
+${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+
+```
+pbcopy < $(find ~/Downloads -name "dev*.Pub*")
+```
