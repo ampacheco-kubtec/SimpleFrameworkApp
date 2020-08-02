@@ -26,3 +26,13 @@ ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
 ```
 pbcopy < $(find ~/Downloads -name "dev*.Pub*")
 ```
+
+## Run the App
+```
+az webapp browse -n devops-webapp
+```
+
+## Destory resources provisioned
+```
+az group delete -n devops-rg -y --no-wait
+```
